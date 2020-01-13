@@ -1,19 +1,18 @@
 var chai = require('chai');
 var assert = chai.assert;
 
-/** Delete this line and the one at the bottom when you're ready for exercise 5
 
 suite('Unit Tests Exercise 5 - Equality', function(){
    // 5 - .equal() and .notEqual() 
    // .equal() compares objects using '=='
    test('is 12 equal to "12"?', function(){
-    assert.fail( 12, '12', 'numbers are coerced into strings with ==');
+    assert.equal( 12, '12', 'numbers are coerced into strings with ==');
    });
    test('is 6*"2" equal to "12"?',function(){
-    assert.fail( 6 * '2', '12', 'no more hints...');
+    assert.equal( 6 * '2', '12', 'no more hints...');
    });
    test('is 6+"2" equal to "12"?',function(){
-    assert.fail( 6 + '2', '12', 'type your error message if you want' );
+    assert.notEqual( 6 + '2', '12', 'type your error message if you want' );
    });
 });
 
@@ -25,5 +24,3 @@ suite('Unit Tests Exercise 5 - Equality', function(){
 // comparing references to memory locations, so even if the contents are the same, 
 // if the arrays or objects were created independently they will not register as equal
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-
-// Delete this line when you're ready for exercise 5 **/
